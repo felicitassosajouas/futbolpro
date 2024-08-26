@@ -1,0 +1,35 @@
+{% if jugadores %}
+<div class="container">
+    <div class="card">
+        {% for mostrar in jugadores %}
+
+        <img src="../static/images/Lionel_Andrés_Messi.png" alt="">
+        <h5>NOMBRE JUGADOR</h5>
+
+        <!-- Checkbox para el control de despliegue -->
+        <input type="checkbox" id="toggle-info-{{ jugador.id }}" class="toggle-checkbox">
+        <label for="toggle-info-{{ jugador.id }}" class="toggle-btn"></label>
+
+        <!-- Contenedor para la información -->
+        <div class="info" >
+            <p>Edad: {{mostrar.edad}} </p>
+            <p>Nacimiento:</p>
+            <p>Altura: </p>
+            <p>Peso:</p>
+            <p>Nacionalidad:</p>
+            <p>Posición:</p>
+            <p>Equipo actual:</p>
+            <p>Partidos jugados:</p>
+            <p>Goles:</p>
+            <p>Asistencias:</p>
+            <p>Tarjetas amarillas:</p>
+            <p>Tarjetas rojas: </p>
+            <p>Pie dominante:</p>
+            <p>Historial equipos:</p>
+            <p>Lesiones recientes:</p>
+            <p>Redes:</p>
+        </div>
+    </div>
+</div>
+
+
